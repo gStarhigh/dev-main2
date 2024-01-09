@@ -1,0 +1,24 @@
+.Fixed {
+  position: fixed;
+  bottom: 0;
+  background-color: #8b9d83;
+  height: 140px;
+}
+
+.Navlinks {
+  margin-top: 30px;
+}
+
+@media only screen and (max-width: 991px) {
+  .Navlinks {
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+  }
+  .LogoText {
+    display: none;
+  }
+  .Logo {
+    margin: 0px 20px;
+  }
+}

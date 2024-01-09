@@ -1,0 +1,22 @@
+.Row {
+  justify-content: center;
+  display: flex;
+  margin: auto;
+  padding-top: 20px;
+}
+
+.Welcome {
+  background-color: lightgrey;
+  padding: 80px;
+  border-radius: 20px;
+}
+
+.FontA {
+  font-size: 4rem;
+  margin: 5px;
+  color: #8b9d83;
+}
+
+.Cards {
+  cursor: pointer;
+}
