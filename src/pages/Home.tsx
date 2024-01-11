@@ -36,29 +36,29 @@ export function Home() {
               <div className={styles.Welcome}>
                 <div className="space-y-2">
                   <h1 className="text-3xl font-bold">
-                    Welcome to Dressage Delight
+                    Välkommen till Starhög Gård
                   </h1>
                   <p className="text-muted">
-                    Your one-stop platform for all things dressage. Book
-                    lessons, reserve ridetrack time, and connect with us.
+                    Boka lektioner, anmäl dig till evenemang och innackordera
+                    din häst hos oss. Här kommer hästarna i första hand.
                   </p>
                 </div>
                 <div className="w-100 max-w-sm space-y-2">
                   <Form className="d-flex gap-2">
                     <Form.Control
                       className="flex-1"
-                      placeholder="Enter your email"
+                      placeholder="Email"
                       type="email"
                     />
                     <Form.Control
                       className="flex-1"
-                      placeholder="Enter your password"
+                      placeholder="Lösenord"
                       type="password"
                     />
-                    <Button type="submit">Login</Button>
+                    <Button type="submit">Logga in</Button>
                   </Form>
                   <p className="text-muted">
-                    Don't have an account? <span>Sign Up</span> here.
+                    Har du inget konto? <span>Registrera dig</span> här.
                   </p>
                 </div>
               </div>
@@ -72,19 +72,18 @@ export function Home() {
             <Col xs={12} sm={6} md={4} className={`${styles.Cards} mb-3`}>
               <div className="d-flex flex-column align-items-center text-center">
                 <FontAwesomeIcon icon={faCalendar} className={styles.FontA} />
-                <h2 className="text-2xl font-bold">Book a Lesson</h2>
+                <h2 className="text-2xl font-bold">Boka en lektion</h2>
                 <p className="text-muted">
-                  Schedule a dressage lesson with our expert trainers.
+                  Boka en lektion på vår ridbana eller hemma hos er med våra
+                  högklassiga instruktörer.
                 </p>
               </div>
             </Col>
             <Col xs={12} sm={6} md={4} className={`${styles.Cards} mb-3`}>
               <div className="d-flex flex-column align-items-center text-center">
                 <FontAwesomeIcon icon={faClock} className={styles.FontA} />
-                <h2 className="text-2xl font-bold">Reserve Ridetrack</h2>
-                <p className="text-muted">
-                  Reserve time on our state-of-the-art ridetrack.
-                </p>
+                <h2 className="text-2xl font-bold">Reservera ridbanan</h2>
+                <p className="text-muted">Reservera tid på vår ridbana.</p>
               </div>
             </Col>
             <Col xs={12} sm={6} md={4} className={`${styles.Cards} mb-3`}>
@@ -93,9 +92,10 @@ export function Home() {
                   icon={faAddressCard}
                   className={styles.FontA}
                 />
-                <h2 className="text-2xl font-bold">Contact Us</h2>
+                <h2 className="text-2xl font-bold">Kontakta oss</h2>
                 <p className="text-muted">
-                  Have questions or need assistance? We're here to help.
+                  Har ni frågor eller behöver hjälp med något? Vi är här för er
+                  skull!
                 </p>
               </div>
             </Col>
