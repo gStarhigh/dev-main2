@@ -15,6 +15,7 @@ import { Instagram } from "../components/Instagram";
 import { Stable } from "../components/Stable";
 import { Pasture } from "../components/Pasture";
 import { Event } from "../components/Event";
+import { Footer } from "../components/Footer";
 
 export function Home() {
   return (
@@ -110,6 +111,7 @@ export function Home() {
           </Row>
         </Container>
       </section>
+      <Footer />
     </main>
   );
 }

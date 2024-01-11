@@ -8,7 +8,6 @@ import { About } from "./pages/About";
 import { Contact } from "./pages/Contact";
 import { Lessons } from "./pages/Lessons";
 import { Navbar } from "./components/Navbar";
-import { Footer } from "./components/Footer";
 
 import styles from "./styles/App.module.css";
 
@@ -25,7 +24,6 @@ function App() {
           <Route path="/contact" element={<Contact />} />
         </Routes>
       </div>
-      <Footer />
     </>
   );
 }

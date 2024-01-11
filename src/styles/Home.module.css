@@ -65,3 +65,8 @@
 .Cards {
   cursor: pointer;
 }
+
+.Copy {
+  text-align: center;
+  font-size: 12px;
+}
