@@ -1,0 +1,10 @@
+.SocialButtons {
+  display: block;
+  margin: 20px auto;
+  background-color: #8b9d83;
+  color: white;
+  padding: 15px;
+  border: none;
+  border-radius: 10px;
+  text-transform: uppercase;
+}

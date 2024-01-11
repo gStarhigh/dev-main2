@@ -1,3 +1,49 @@
+.Hero {
+  position: relative;
+  height: 100vh; /* Hela skärmen i höjd */
+  width: 100vw;
+  overflow: hidden;
+}
+
+.HeroImage {
+  width: 100vw; /* Ta upp hela bredden av föräldern */
+  height: 100vh; /* Ta upp hela höjden av föräldern */
+  object-fit: cover; /* Klipp sidorna för att behålla proportionerna */
+  object-position: center; /* Centrera bilden horisontellt */
+}
+
+.HeroText {
+  position: absolute;
+  top: 30%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: white;
+}
+
+.HeroH2 {
+  font-size: 10vw;
+  font-weight: 900;
+  margin-bottom: 40px;
+  text-transform: uppercase;
+}
+
+.HeroButton {
+  display: block;
+  margin: 20px auto;
+  background-color: #8b9d83;
+  color: white;
+  padding: 15px;
+  border: none;
+  border-radius: 10px;
+  text-transform: uppercase;
+}
+
+.FontHorse {
+  font-size: 8rem;
+  margin: auto;
+}
+
 .Row {
   justify-content: center;
   display: flex;
@@ -6,9 +52,8 @@
 }
 
 .Welcome {
-  background-color: lightgrey;
   padding: 40px;
-  border-radius: 20px;
+  text-align: center;
 }
 
 .FontA {

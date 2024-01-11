@@ -1,71 +1,79 @@
 import Col from "react-bootstrap/Col";
 import Container from "react-bootstrap/Container";
 import Row from "react-bootstrap/Row";
-import Button from "react-bootstrap/Button";
-import Image from "react-bootstrap/Image";
 
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faCalendar } from "@fortawesome/free-solid-svg-icons";
 import { faClock } from "@fortawesome/free-solid-svg-icons";
 import { faAddressCard } from "@fortawesome/free-solid-svg-icons";
+import { faHorseHead } from "@fortawesome/free-solid-svg-icons";
 
 import styles from "../styles/Home.module.css";
-import { Form } from "react-bootstrap";
+
+import { News } from "../components/news";
+import { Instagram } from "../components/Instagram";
+import { Stable } from "../components/Stable";
+import { Pasture } from "../components/Pasture";
+import { Event } from "../components/Event";
 
 export function Home() {
   return (
     <main className="flex-1">
-      <section className="py-lg-5 py-xl-5">
-        <Container fluid>
-          <Row className="gap-5">
-            <Col lg={3} xl={5} className="d-flex align-items-center">
-              <Image
-                alt="Hero"
-                className="mx-auto rounded"
-                src="https://res.cloudinary.com/draygqe7t/image/upload/v1699965816/media/images/resizedImage_itrdue.png"
-                width="550"
-                height="310"
-                fluid
-              />
-            </Col>
-            <Col
-              lg={3}
-              xl={6}
-              className="d-flex flex-column justify-content-center gap-4"
-            >
-              <div className={styles.Welcome}>
-                <div className="space-y-2">
-                  <h1 className="text-3xl font-bold">
-                    Välkommen till Starhög Gård
-                  </h1>
-                  <p className="text-muted">
-                    Boka lektioner, anmäl dig till evenemang och innackordera
-                    din häst hos oss. Här kommer hästarna i första hand.
-                  </p>
-                </div>
-                <div className="w-100 max-w-sm space-y-2">
-                  <Form className="d-flex gap-2">
-                    <Form.Control
-                      className="flex-1"
-                      placeholder="Email"
-                      type="email"
-                    />
-                    <Form.Control
-                      className="flex-1"
-                      placeholder="Lösenord"
-                      type="password"
-                    />
-                    <Button type="submit">Logga in</Button>
-                  </Form>
-                  <p className="text-muted">
-                    Har du inget konto? <span>Registrera dig</span> här.
-                  </p>
-                </div>
-              </div>
-            </Col>
-          </Row>
-        </Container>
+      <section>
+        <div className={styles.Hero}>
+          <img
+            className={styles.HeroImage}
+            src="https://res.cloudinary.com/draygqe7t/image/upload/v1691490074/20201017_083108_czijtu.jpg"
+          ></img>
+          <div className={styles.HeroText}>
+            <FontAwesomeIcon icon={faHorseHead} className={styles.FontHorse} />
+            <h2 className={styles.HeroH2}>Starhög {"\n"}Gård</h2>
+            <button className={styles.HeroButton}>Kontakta oss</button>
+          </div>
+        </div>
       </section>
+
+      <section>
+        <div className={styles.Welcome}>
+          <h4>Välkommen till </h4>
+          <h3>STARHÖG GÅRD</h3>
+          <p>
+            Precis utanför Ängelholm, i en kuperad och välskött miljö på 9
+            hektar, finner du Starhög Gård. Gården, som är belägen med närhet
+            till både Helsingborg och Ängelholm, är familjen Starhögs
+            hjärteprojekt sedan 2019. Här bedrivs en mångfald av aktiviteter,
+            där hästar, evenemang och dressyrlektioner utgör kärnan i
+            verksamheten.
+          </p>
+          <p>
+            Gården är inte bara en plats för affärsverksamhet utan även ett hem.
+            Maria Starhög är hjärnan bakom gården och bor här tillsammans med
+            sin familj. Familjen inkluderar maken Gustaf samt deras två barn,
+            Ellie och Isak.
+          </p>
+          <p>
+            På Starhög Gård finns också möjlighet att medverka i olika evenemang
+            som kan vara allt från dressyrläger, till hagelskytte. Det finns
+            också möjligheter att hyra plats på lösdrift, stall och ridbanan.
+            För mer info om vad vi kan erbjuda är ni välkomna att kontakta oss
+            eller se våra kommande evenemang.
+          </p>
+          <p>
+            Välkommen till Starhög Gård – där passion för hästar och familjens
+            gemenskap förenas i en vacker lantlig omgivning.
+          </p>
+          <div>
+            <button className={styles.HeroButton}>Kontakta oss</button>
+            <button className={styles.HeroButton}>Evenemang</button>
+          </div>
+        </div>
+      </section>
+      <News />
+      <Instagram />
+      <Event />
+      <Stable />
+      <Pasture />
+
       <section className="py-5 py-md-5 py-lg-5">
         <Container fluid>
           <Row className="justify-content-center">
