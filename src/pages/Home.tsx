@@ -15,7 +15,7 @@ import { Form } from "react-bootstrap";
 export function Home() {
   return (
     <main className="flex-1">
-      <section className="py-5 py-md-5 py-lg-5 py-xl-5">
+      <section className="py-lg-5 py-xl-5">
         <Container fluid>
           <Row className="gap-5">
             <Col lg={3} xl={5} className="d-flex align-items-center">
