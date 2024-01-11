@@ -1,20 +1,20 @@
 .Hero {
   position: relative;
-  height: 100vh; /* Hela skärmen i höjd */
+  height: 100vh;
   width: 100vw;
   overflow: hidden;
 }
 
 .HeroImage {
-  width: 100vw; /* Ta upp hela bredden av föräldern */
-  height: 100vh; /* Ta upp hela höjden av föräldern */
-  object-fit: cover; /* Klipp sidorna för att behålla proportionerna */
-  object-position: center; /* Centrera bilden horisontellt */
+  width: 100vw;
+  height: 100vh;
+  object-fit: cover;
+  object-position: center;
 }
 
 .HeroText {
   position: absolute;
-  top: 30%;
+  top: 40%;
   left: 50%;
   transform: translate(-50%, -50%);
   text-align: center;
@@ -69,4 +69,10 @@
 .Copy {
   text-align: center;
   font-size: 12px;
+}
+
+@media only screen and (max-width: 768px) {
+  .HeroText {
+    top: 30%;
+  }
 }
