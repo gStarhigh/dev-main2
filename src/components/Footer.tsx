@@ -9,7 +9,7 @@ export function Footer() {
     <NavbarBS className={styles.Fixed}>
       <Container className="justify-content-center">
         <Nav>
-          <div>
+          <div className={styles.Navlinks}>
             <Nav.Link to={"Lessons"} as={NavLink} className={styles.Navlinks}>
               Lektioner
             </Nav.Link>
@@ -32,7 +32,7 @@ export function Footer() {
               Starhög Gård
             </span>
           </NavbarBS.Brand>
-          <div>
+          <div className={styles.Navlinks}>
             <Nav.Link to={"About"} as={NavLink} className={styles.Navlinks}>
               Om
             </Nav.Link>

@@ -1,3 +1,49 @@
+.Hero {
+  position: relative;
+  height: 100vh;
+  width: 100vw;
+  overflow: hidden;
+}
+
+.HeroImage {
+  width: 100vw;
+  height: 100vh;
+  object-fit: cover;
+  object-position: center;
+}
+
+.HeroText {
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: white;
+}
+
+.HeroH2 {
+  font-size: 10vw;
+  font-weight: 900;
+  margin-bottom: 40px;
+  text-transform: uppercase;
+}
+
+.HeroButton {
+  display: block;
+  margin: 20px auto;
+  background-color: #8b9d83;
+  color: white;
+  padding: 15px;
+  border: none;
+  border-radius: 10px;
+  text-transform: uppercase;
+}
+
+.FontHorse {
+  font-size: 8rem;
+  margin: auto;
+}
+
 .Row {
   justify-content: center;
   display: flex;
@@ -6,9 +52,8 @@
 }
 
 .Welcome {
-  background-color: lightgrey;
-  padding: 80px;
-  border-radius: 20px;
+  padding: 40px;
+  text-align: center;
 }
 
 .FontA {
@@ -19,4 +64,15 @@
 
 .Cards {
   cursor: pointer;
+}
+
+.Copy {
+  text-align: center;
+  font-size: 12px;
+}
+
+@media only screen and (max-width: 768px) {
+  .HeroText {
+    top: 30%;
+  }
 }

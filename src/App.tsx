@@ -1,6 +1,5 @@
 // React
 import { Routes, Route } from "react-router-dom";
-import { Container } from "react-bootstrap";
 
 // Own imports
 import { Home } from "./pages/Home";
@@ -9,13 +8,14 @@ import { About } from "./pages/About";
 import { Contact } from "./pages/Contact";
 import { Lessons } from "./pages/Lessons";
 import { Navbar } from "./components/Navbar";
-import { Footer } from "./components/Footer";
+
+import styles from "./styles/App.module.css";
 
 function App() {
   return (
     <>
       <Navbar />
-      <Container className="mb-4">
+      <div className={styles.App}>
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/lessons" element={<Lessons />} />
@@ -23,8 +23,7 @@ function App() {
           <Route path="/about" element={<About />} />
           <Route path="/contact" element={<Contact />} />
         </Routes>
-      </Container>
-      <Footer />
+      </div>
     </>
   );
 }

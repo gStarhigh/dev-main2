@@ -10,7 +10,7 @@ export function Navbar() {
 
   return (
     <NavbarBS
-      className={`${styles.NavbarBG} shadow-md mb-3`}
+      className={`${styles.NavbarBG} shadow-md`}
       expanded={expanded}
       expand="md"
     >
