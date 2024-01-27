@@ -37,11 +37,11 @@ export function Navbar() {
             <Nav.Link to={"/"} as={NavLink}>
               Hem
             </Nav.Link>
+            <Nav.Link to={"Events"} as={NavLink}>
+              Event
+            </Nav.Link>
             <Nav.Link to={"Lessons"} as={NavLink}>
               Lektioner
-            </Nav.Link>
-            <Nav.Link to={"Ridetrack"} as={NavLink}>
-              Ridbana
             </Nav.Link>
             <Nav.Link to={"About"} as={NavLink}>
               Om

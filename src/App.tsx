@@ -4,7 +4,7 @@ import { Container } from "react-bootstrap";
 
 // Own imports
 import { Home } from "./pages/Home";
-import { Ridetrack } from "./pages/Ridetrack";
+import { Events } from "./pages/Events";
 import { About } from "./pages/About";
 import { Contact } from "./pages/Contact";
 import { Lessons } from "./pages/Lessons";
@@ -19,7 +19,7 @@ function App() {
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/lessons" element={<Lessons />} />
-          <Route path="/ridetrack" element={<Ridetrack />} />
+          <Route path="/events" element={<Events />} />
           <Route path="/about" element={<About />} />
           <Route path="/contact" element={<Contact />} />
         </Routes>
