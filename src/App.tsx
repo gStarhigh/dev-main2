@@ -10,6 +10,7 @@ import { Lessons } from "./pages/Lessons";
 import { Navbar } from "./components/Navbar";
 
 import styles from "./styles/App.module.css";
+import SignUpForm from "./pages/authorization/SignUpForm";
 
 function App() {
   return (
@@ -18,6 +19,7 @@ function App() {
       <div className={styles.App}>
         <Routes>
           <Route path="/" element={<Home />} />
+          <Route path="/signup" element={<SignUpForm />} />
           <Route path="/lessons" element={<Lessons />} />
           <Route path="/events" element={<Events />} />
           <Route path="/about" element={<About />} />
